@@ -1,11 +1,15 @@
 import React from 'react';
 
-function test()_{
+const ankush = ['bholu','bhanu','ak'];
+class Test extends React.Component {
+    render() {
     return(
-        <div>
-            hi therw
-        </div>
-    )
+        <li>
+            {ankush.map(ank=>ank+' ' )}
+
+        </li>
+    );
+}
 }
 
-export default test
+export default Test
