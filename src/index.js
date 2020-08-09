@@ -4,9 +4,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+function Welcome(props){
+  return (
+    
+    <h1>hello {props.name}
+    <App/></h1>
+  )
+}
+
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Welcome name="ak" />
   </React.StrictMode>,
   document.getElementById('root')
 );
