@@ -2,21 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Clock from './Clock';
 import * as serviceWorker from './serviceWorker';
 
-function Welcome(props){
-  return (
+// function Welcome(props){
+//   return (
     
-    <h1>hello {props.name}
-    <App/></h1>
-  )
-}
+//     <h1>hello {props.name}
+//     <App/></h1>
+//   )
+// }
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome name="ak" />
+    {/* <Welcome name="ak" /> */}
+    <Clock date={new Date()}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
