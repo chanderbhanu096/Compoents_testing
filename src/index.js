@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Clock from './Clock';
 import * as serviceWorker from './serviceWorker';
-
+import Statesample from './stateexample'
 // function Welcome(props){
 //   return (
     
@@ -18,7 +18,8 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     {/* <Welcome name="ak" /> */}
-    <Clock date={new Date()}/>
+    <Statesample />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
